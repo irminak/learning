@@ -33,7 +33,7 @@ div img {
     border: white 2px solid;
 }
 div img:hover {
-    border: #222 2px solid;
+    border: #ccc 2px solid;
 }
 button {
     margin: 0 auto 40px;
@@ -53,7 +53,13 @@ button:hover {
 .container {
     display: flex;
     justify-content: center;
-    gap: 20vw;
+    gap: 10vw;
+}
+.panel-left,
+.panel-right {
+    width: 300px;
+    padding: 10px 20px;
+    background-color: #eee;
 }
 h3 {
     text-transform: uppercase;
@@ -63,4 +69,9 @@ h3 {
 p {
     font-size: 14px;
     margin-bottom: 10px;
+}
+span {
+    padding-left: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
 }
