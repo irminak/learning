@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Rock, Paper, Scissors</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
+        <link
+            rel="stylesheet"
+            href="style.css"
+        />
+    </head>
+    <body>
+        <h1>Gra 'Papier, Kamień, Nozyczki'</h1>
+        <section>
+            <p>Proszę, wybierz</p>
+            <div>
+                <img
+                    src="paper.png"
+                    data-option="paper"
+                    alt=""
+                />
+                <img
+                    src="rock.png"
+                    data-option="rock"
+                    alt=""
+                />
+                <img
+                    src="scissors.png"
+                    data-option="scissors"
+                    alt=""
+                />
+            </div>
+        </section>
+        <button>Lets Play!</button>
+        <div class="container">
+            <div class="panel-left">
+                <h3>Wyniki gry</h3>
+                <p>Twój wybór: <span data-summary="yout-choice"></span></p>
+                <p>Wybór komputera: <span data-summary="ai-choice"></span></p>
+                <h4>Zwycięzca gry: <span data-summary="winner"></span></h4>
+            </div>
+            <div class="panel-right">
+                <h3>Aktualne wyniki</h3>
+                <p>liczba gier: <span data-score="games-number"></span></p>
+                <p>wygranych: <span data-score="wins-numbers"></span></p>
+                <p>przegranych: <span data-score="loss-numbers"></span></p>
+                <p>remisów: <span data-score="draws-numbers"></span></p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
