@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Document</title>
+        <style>
+            body {
+                background-color: black;
+            }
+            section {
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            h1 {
+                color: white;
+                font-family: monospace;
+            }
+            span.fw {
+                font-size: 40px;
+            }
+            div {
+                display: flex;
+                justify-content: center;
+            }
+            p {
+                color: white;
+                font-family: monospace;
+                font-size: 26px;
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <h1>Do koncertu <span class="fw">Taco</span> pozostało:</h1>
+            <div>
+                <p><span class="days"></span>d:</p>
+                <p><span class="hours"></span>h:</p>
+                <p><span class="minutes"></span>m:</p>
+                <p><span class="seconds"></span>s</p>
+            </div>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
