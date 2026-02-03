@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Document</title>
+        <style>
+            body {
+                height: 100vh;
+                width: 100vh;
+            }
+            section {
+                border: solid 1px black;
+                width: 200px;
+                height: 200px;
+                border-radius: 100%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            button {
+                border: solid 1px black;
+                border-radius: 30px;
+                padding: 3px 5px;
+                background-color: aliceblue;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: cornflowerblue;
+            }
+            p {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                    sans-serif;
+            }
+            p.time {
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div class="button">
+                <button class="start">Start</button>
+                <button class="reset">Reset</button>
+            </div>
+            <div class="time">
+                <p>Czas od startu</p>
+                <p class="time">---</p>
+            </div>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
