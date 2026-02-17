@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>To do list</title>
+        <link
+            rel="preconnect"
+            href="https://fonts.googleapis.com"
+        />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            div {
+                background-color: ivory;
+                width: 600px;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-family: 'SN Pro', sans-serif;
+            }
+            input {
+                border: 1px solid black;
+                border-radius: 16px;
+                height: 26px;
+                padding: 0 8px;
+                outline: none;
+            }
+            input:hover {
+                border-color: rosybrown;
+            }
+            button {
+                font-family: 'SN Pro', sans-serif;
+                text-transform: uppercase;
+            }
+            .add,
+            .clean {
+                border: solid 1px black;
+                background-color: transparent;
+                border-radius: 16px;
+                padding: 8px 16px;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            .add:hover {
+                background-color: royalblue;
+                color: white;
+                border-color: white;
+            }
+            .clean:hover {
+                background-color: red;
+                color: white;
+                border-color: white;
+            }
+            ul {
+                list-style: disc;
+            }
+            li {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+            li > p {
+                font-family: 'Just Me Again Down Here', cursive;
+                font-size: 26px;
+                line-height: 0.5em;
+            }
+            li > button {
+                border-radius: 100%;
+                border: solid 1px black;
+                background-color: transparent;
+                width: 16px;
+                height: 16px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            .remove:hover {
+                background-color: palevioletred;
+                color: white;
+                border-color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Lista rzeczy do zrobienia</h1>
+            <input
+                type="text"
+                name="todo"
+                id="todo"
+            />
+            <button class="add">Dodaj zadanie</button>
+            <button class="clean">Wyczyść listę</button>
+            <ul>
+                <li>
+                    <p style="font-size: 16px">*</p>
+                    <p>first thing</p>
+                    <button class="remove">X</button>
+                </li>
+                <li>
+                    <p style="font-size: 16px">*</p>
+                    <p>second thing</p>
+                    <button class="remove">X</button>
+                </li>
+            </ul>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
