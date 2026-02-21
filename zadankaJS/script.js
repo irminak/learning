@@ -36,3 +36,13 @@ const addScope = (a, b) => {
 addScope(1, 6);
 addScope(9, 4);
 addScope(5, 5);
+
+function game(n, A, B, C) {
+    if (n > 0) {
+        game(n - 1, A, C, B);
+        console.log(`${A} -> ${C}`);
+        game(n - 1, B, A, C);
+    }
+}
+
+game(5, 'A', 'B', 'C');
