@@ -21,13 +21,16 @@
             rel="stylesheet"
         />
         <style>
-            div {
+            body > div {
                 background-color: ivory;
                 width: 600px;
                 padding: 30px 20px;
             }
             h1 {
                 font-family: 'SN Pro', sans-serif;
+            }
+            div.buttons {
+                padding-bottom: 10px;
             }
             input {
                 border: 1px solid black;
@@ -44,7 +47,8 @@
                 text-transform: uppercase;
             }
             .add,
-            .clean {
+            .clean,
+            .search2 {
                 border: solid 1px black;
                 background-color: transparent;
                 border-radius: 16px;
@@ -59,6 +63,11 @@
             }
             .clean:hover {
                 background-color: red;
+                color: white;
+                border-color: white;
+            }
+            .search2:hover {
+                background-color: yellowgreen;
                 color: white;
                 border-color: white;
             }
@@ -96,14 +105,35 @@
     </head>
     <body>
         <div>
-            <h1>Lista rzeczy do zrobienia</h1>
-            <input
-                type="text"
-                name="todo"
-                id="todo"
-            />
-            <button class="add">Dodaj zadanie</button>
-            <button class="clean">Wyczyść listę</button>
+            <h1>
+                Lista rzeczy do zrobienia:
+                <span
+                    class="counter"
+                    style="
+                        color: darkmagenta;
+                        font-family: 'Just Me Again Down Here';
+                        font-size: 40px;
+                    "
+                ></span>
+            </h1>
+            <div class="buttons">
+                <input
+                    type="text"
+                    name="todo"
+                    id="todo"
+                />
+                <button class="add">Dodaj zadanie</button>
+                <button class="clean">Wyczyść listę</button>
+            </div>
+            <div>
+                <input
+                    type="text"
+                    name="search"
+                    id="search"
+                    class="inputsearch"
+                />
+                <button class="search2">Wyszukaj</button>
+            </div>
             <ul>
                 <li>
                     <p style="font-size: 16px">*</p>
