@@ -45,4 +45,17 @@ function game(n, A, B, C) {
     }
 }
 
-game(5, 'A', 'B', 'C');
+game(3, 'A', 'B', 'C');
+
+function squares(a, b) {
+    let squareSize = Math.min(a, b);
+    let sum = 0;
+    for (let i = 0; i < squareSize; i++) {
+        let squareAmount = (a - i) * (b - i);
+        sum += squareAmount;
+        console.log(`${i + 1}x${i + 1}: ${squareAmount}`);
+    }
+    console.log(`All: ${sum}`);
+}
+
+squares(10, 8);
